@@ -26,6 +26,13 @@ app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
 app.use("/api", paymentBRoutes);
 
+//Testing
+app.get("/success",(req, res)=>{
+  res.json({
+    error: "no error"
+  })
+})
+
 
 //DB CONNECTION
 mongoose
