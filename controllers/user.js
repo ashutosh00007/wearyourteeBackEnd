@@ -87,3 +87,7 @@ exports.pushOrderInPurchaseList = (req,res,next) => {
     );
   next();
 }
+
+exports.successMessage = (req, res)=> {
+  res.json({error:"Success"});
+}
