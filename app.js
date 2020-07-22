@@ -26,10 +26,10 @@ app.use("/api", productRoutes);
 app.use("/api", orderRoutes);
 app.use("/api", paymentBRoutes);
 
-//process.env.DATABASE
+
 //DB CONNECTION
 mongoose
-  .connect("mongodb+srv://ashutosh07:ashutosh07@wearyourteecluster.igpz5.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+  .connect(process.env.DATABASE, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
