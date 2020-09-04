@@ -27,11 +27,11 @@ app.use("/api", orderRoutes);
 app.use("/api", paymentBRoutes);
 
 //Testing
-app.get("/success",(req, res)=>{
-  res.json({
-    error: "no error"
-  })
-})
+// app.get("/success",(req, res)=>{
+//   res.json({
+//     error: "no error"
+//   })
+// })
 
 
 //DB CONNECTION
